@@ -1,0 +1,7 @@
+<ng-container>
+    <app-slider *ngIf="popularMovies.length > 0" [items]="popularMovies"></app-slider>
+    <p-skeleton *ngIf="popularMovies.length == 0" shape="square" width="100%" height="35rem"></p-skeleton>
+</ng-container>
+<app-items-banner [items]="upcomingMovies" title="Upcoming Movies"></app-items-banner>
+<app-items-banner [items]="topRatedMovies" title="Top Rated Movies"></app-items-banner>
+<app-items-banner [items]="popularTvShows" title="Popular Tv-Shows"></app-items-banner>
